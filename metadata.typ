@@ -1,12 +1,12 @@
 #let format_strane = "iso-b5"         // могуће вредности: iso-b5, a4
-#let naslov = "Шаблон и упутство за писање завршних радова"
-#let autor = "Уписати име и презиме"
+#let naslov = "2D ортогонални knapsack проблем са ротацијом"  // Наслов рада
+#let autor = "Маша Иванов"
 
 // На енглеском
-#let naslov_eng = "Template and tutorial for thesis preparation"
-#let autor_eng = "Upisati ime i prezime na latinici"
+#let naslov_eng = "2D orthogonal knapsack problem with rotation"
+#let autor_eng = "Maša Ivanov"
 
-#let indeks = "Уписати индекс"
+#let indeks = "SV54/2021"
 
 // Име и презиме ментора
 #let mentor = "Игор Дејановић"
@@ -16,28 +16,25 @@
 // Скинути коментаре са одговарајућих линија
 #let studijski_program = "Софтверско инжењерство и информационе технологије"
 //#let studijski_program = "Рачунарство и аутоматика"
-#let stepen = "Мастер академске студије"
-//#let stepen = "Основне академске студије"
+//#let stepen = "Мастер академске студије"
+#let stepen = "Основне академске студије"
 
 #let godina = [#datetime.today().year()]
 
-#let kljucne_reci = "Шаблон, завршни рад, упутство"
+#let kljucne_reci = "2D ортогонални knapsack проблем, генетски алгоритам, хеуристике"
 #let apstrakt = [
-     Овај документ представља упутство за писање завршних радова на Факултету
-     техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
+     Овај рад решава 2D ортогонални _knapsack_ проблем са ротацијом правоугаоника за 90 степени применом генетског алгоритма. Декодирање хромозома реализовано je хеуристикама _maximal rectangle_, _guillotine_ и _skyline_, уз могућност поређења резултата. Апликација подржава ручни унос и JSON, као и визуелизацију распореда. Тестови на GCUT инстанцама показују да _maximal rectangle_ најчешће даје највећу искоришћеност, _guillotine_ је најбржи, а _skyline_ представља компромис.
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "Template, thesis, tutorial"
+#let kljucne_reci_eng = "2D orthogonal knapsack problem, genetic algorithm, heuristics"
 #let apstrakt_eng = [
-     This document provides guidelines for writing final theses at the Faculty
-     of Technical Sciences, University of Novi Sad. At the same time, it serves
-     as a Typst template.
+     This thesis solves the 2D orthogonal knapsack problem with 90-degree rectangle rotation using a genetic algorithm. Chromosome decoding is implemented with the maximal rectangle, guillotine, and skyline heuristics, with the ability to compare results. The application supports manual input and JSON, as well as layout visualization. Tests on GCUT instances show that maximal rectangle most often achieves the highest utilization, guillotine is the fastest, and skyline is a compromise.
 ]
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
 #let zadatak = [
-     #lorem(100)
+     Задатак рада је пројектовање и имплементација решења за 2D ортогонални knapsack проблем са дозвољеном ротацијом правоугаоника за 90 степени. Потребно је реализовати генетски алгоритам за избор подскупа правоугаоника који максимизује искоришћену површину и минимизује празан простор на задатој површини. Декодирање хромозома треба реализовати помоћу више хеуристика за постављање правоугаоника и обезбедити механизам за њихово поређење. Потребно је реализовати визуализацију решења као и поређење резултата са другим хеуристикама.
 ]
 
 // TODO: Датум одбране и чланове комисије добијате од ментора
