@@ -18,8 +18,8 @@
 
 #v(3cm)
 
-#align(center, text(if naslov == "Шаблон и упутство за писање завршних радова"
-          { "Проф. др Игор Дејановић" } else { autor },
+#align(center, text(if naslov == "2D ортогонални knapsack проблем са ротацијом"
+          { autor },
           size: 20pt))
 
 #v(1cm)
@@ -28,7 +28,7 @@
 
 #v(1cm)
 
-#if naslov != "Шаблон и упутство за писање завршних радова" {
+#if naslov != "2D ортогонални knapsack проблем са ротацијом" {
     align(center, text("ЗАВРШНИ РАД", size: 20pt))
     align(center, text(stepen, size: 20pt))
 }
